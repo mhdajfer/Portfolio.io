@@ -1,4 +1,19 @@
+
+
 #bg 
 {	
   background: linear-gradient(20deg, #192839 50%, #1ab4e2 115%);
+}
+
+.icon:after{
+  width: 40px;
+	height:40px;
+  background:rgb(255, 255, 255);
+  transform:scale(1.5);
+  position: absolute;
+  left: -16%;
+  top: -16%;
+  opacity:0;
+  transition:transform .5s, opacity 0s;
+  z-index: 1;
 }

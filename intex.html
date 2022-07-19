@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bg" class="h-screen w-full absolute" style="z-index: -2;"></div>
+
+    <div class="w-full flex justify-around fixed h-28 mx-auto pt-10 nav-scroll">
+        <div>
+            <h3 class="text-5xl font-black cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-200">
+                MHD AJFER
+            </h3>
+        </div>
+        <div class="">
+            <ul class="flex space-x-10 text-lg text-white pt-6 cursor-pointer">
+                <li class=" hover:text-yellow-500">
+                    Home
+                </li>
+                <li class=" hover:text-yellow-500">
+                    About
+                </li>
+                <li class=" hover:text-yellow-500">
+                    Contact me
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="bg.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(window).scroll(function(){
+  	    var scroll = $(window).scrollTop();
+	    if (scroll > 300) {
+            console.log("scrolled")
+	        $(".nav-scroll").addClass("bg-black")
+	    }
+        else{
+            $(".nav-scroll").removeClass("bg-black")
+        }
+
+        })  
+        })
+    </script>
+</body>
+</html>

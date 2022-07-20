@@ -17,3 +17,32 @@
   transition:transform .5s, opacity 0s;
   z-index: 1;
 }
+
+
+/* ----------------------Project Cards------------------- */
+
+
+
+.wrapper {
+  max-width: 850px;
+  margin: 20px auto;
+  height: auto;
+
+}
+
+.wrapper p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.77px;
+  font-weight: 400;
+}
+
+.card_wrapper {
+  background: #E4F2F9;
+}
+
+
+
+.card_wrapper:hover {
+  box-shadow: 0 8px 17px 0 rgba(250, 26, 26, 0.09);
+  transform: scale(1.01) }

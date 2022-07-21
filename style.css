@@ -24,9 +24,6 @@
 
 
 .wrapper {
-  max-width: 850px;
-  margin: 20px auto;
-  height: auto;
 
 }
 
@@ -46,3 +43,14 @@
 .card_wrapper:hover {
   box-shadow: 0 8px 17px 0 rgba(250, 26, 26, 0.09);
   transform: scale(1.01) }
+
+
+.section-divider {
+    display: block;
+    border: none;
+    padding: 0;
+  }
+.faded-edges {
+    height: 3px;
+  }
+  

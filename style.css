@@ -34,10 +34,16 @@
   font-weight: 400;
 }
 
+
+
+
+
 .card_wrapper {
   background: #E4F2F9;
 }
 
+
+/* ---------------------------------------------------- */
 
 
 .card_wrapper:hover {
@@ -54,6 +60,7 @@
     height: 1px;
   }
   
+<<<<<<< HEAD
   .btn-hover {
     background-size: 300% 100%;
 
@@ -67,3 +74,5 @@
 .btn-hover.color-10 {
     background-image: linear-gradient(to right, #fd1370, #7d9be9, #7d9be9 , #fd1370);
 }
+=======
+>>>>>>> remotes/server/master

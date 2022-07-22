@@ -51,6 +51,19 @@
     padding: 0;
   }
 .faded-edges {
-    height: 3px;
+    height: 1px;
   }
   
+  .btn-hover {
+    background-size: 300% 100%;
+
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+
+}
+
+.btn-hover.color-10 {
+    background-image: linear-gradient(to right, #fd1370, #7d9be9, #7d9be9 , #fd1370);
+}

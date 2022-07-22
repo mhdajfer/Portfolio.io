@@ -60,7 +60,6 @@
     height: 1px;
   }
   
-<<<<<<< HEAD
   .btn-hover {
     background-size: 300% 100%;
 
@@ -74,5 +73,40 @@
 .btn-hover.color-10 {
     background-image: linear-gradient(to right, #fd1370, #7d9be9, #7d9be9 , #fd1370);
 }
-=======
->>>>>>> remotes/server/master
+
+
+/* --------------------------Skill bars ----------------------------- */
+
+#skills {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+}
+#skills li {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 6px;
+}
+#skills li .bar-container, #skills li .bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
+#skills li .bar-container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #333;
+  text-align: right;
+}
+#skills li .bar-container .bar {
+  top: 0;
+}
+#skills li .bar-container .pct {
+  position: absolute;
+  top: -19px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}

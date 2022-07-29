@@ -19,49 +19,17 @@
 }
 
 
-/* ----------------------Project Cards------------------- */
-
-
-
-.wrapper {
-
+.section-divider{
+  display: block;
+  border: none;
+  padding: 0;
 }
-
-.wrapper p{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  letter-spacing: 0.77px;
-  font-weight: 400;
-}
-
-
-
-
-
-.card_wrapper {
-  background: #E4F2F9;
-}
-
-
-/* ---------------------------------------------------- */
-
-
-.card_wrapper:hover {
-  box-shadow: 0 8px 17px 0 rgba(250, 26, 26, 0.09);
-  transform: scale(1.01) }
-
-
-.section-divider {
-    display: block;
-    border: none;
-    padding: 0;
-  }
 .faded-edges {
-    height: 1px;
-  }
+  height: 1px;
+}
   
-  .btn-hover {
-    background-size: 300% 100%;
+.btn-hover {
+  background-size: 300% 100%;
 
 }
 
@@ -71,8 +39,33 @@
 }
 
 .btn-hover.color-10 {
-    background-image: linear-gradient(to right, #fd1370, #7d9be9, #7d9be9 , #fd1370);
+  background-image: linear-gradient(to right, #fd1370, #7d9be9, #7d9be9 , #fd1370);
 }
+
+
+
+/* ----------------------Project Cards------------------- */
+
+
+
+
+.wrapper p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.77px;
+  font-weight: 400;
+}
+
+.card_wrapper {
+  background: #E4F2F9;
+}
+
+.card_wrapper:hover {
+  box-shadow: 0 8px 17px 0 rgba(250, 26, 26, 0.09);
+  transform: scale(1.01) 
+}
+
+/* --------------------------//Project cards ----------------------------- */
 
 
 /* --------------------------Skill bars ----------------------------- */
@@ -109,4 +102,14 @@
   right: 0;
   opacity: 0;
   transition: opacity 0.3s linear;
+}
+
+
+
+ /* --------------------------//Skill bars ----------------------------- */
+
+#submit-form input:focus ~ label
+{
+
+  transform: translateY(-20px);
 }

@@ -13,10 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="preloader.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body style="overflow-x: hidden;">
+
     <div id="bg" class="h-[730px] w-full absolute" style="z-index: -2;">
     </div>
 
@@ -266,12 +268,65 @@
         
     </section>
 
+    <!-- ----------------Contact form---------------------- -->
+
+    <button id="msg" class="z-10 w-20 fixed bottom-10 right-20 hover:pb-1 rounded-full flex items-center justify-center">
+        <span class="">
+            <img src="media/message.png" class="" alt="">
+        </span>
+    </button>
+
+    <div id="bord" class="w-[350px] h-[350px] fixed bottom-20 right-24 bg-white rounded-md transition-all duration-500 bg-gradient-to-r from-cyan-500 to-blue-300" style="opacity: 1; visibility: visible;">
+        <form id="submit-form" class="p-8" action="">
+            <div class="mb-3 relative w-full h-14 pt-6">
+                <input type="text" id="fname" name="name" class="bg-transparent outline-0 border-b w-60 border-black">
+                <label class="absolute left-0 text-slate-500" style="transition: all 0.3s ease; pointer-events: none;">Full name</label>
+            </div>
+            <div class="mb-3 relative w-full h-14 pt-6">
+                <input type="text" id="lname" name="email" class="bg-transparent outline-0 border-b w-60 border-black"/>
+                <label class="absolute left-0 text-slate-500" style="transition: all 0.3s ease; pointer-events: none;">Email</label>
+            </div>
+      
+            <div class="mb-3 text-md">
+                <label for="country" class="mr-8">
+                    country
+                </label>
+                <select name="color" id="country" class="bg-transparent border-1 rounded-lg p-2 text-sm">
+                    <option>select any </option>
+                    <option value="australis">Australia</option>
+                    <option value="india">India</option>
+                    <option value="usa">Usa</option>
+                </select>
+            </div>
+      
+            <div class="mb-3 relative w-full h-14 pt-6">
+                <input type="text" class="bg-transparent outline-0 border-b w-72 border-black" id="subject"/>
+                <label for="subject" class="absolute left-0 text-slate-500" style="transition: all 0.3s ease; pointer-events: none;">subject</label>
+            </div>
+            <div class="w-full">
+                <input type="submit" value="Submit" class="w-full bg-yellow-100 rounded-sm h-10 text-lg hover:opacity-80">
+            </div>
+        </form>
+      </div>
+
+      <!-- ----------------//Contact form---------------------- -->
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/bg.js"></script>
     <script src="js/skillbars.js"></script>
+    <script src="js/contact.js"></script>
     <script>
+
         $(document).ready(function(){
+
+        $(window).on("load", function(){
+            
+            setTimeout(function(){
+                $("#wrapp").css('opacity', 0);
+                $("#wrapp").css('z-index', -999);
+            }, 3000)
+        })   
         $(window).scroll(function(){
   	    var scroll = $(window).scrollTop();
 	    if (scroll > 300) {

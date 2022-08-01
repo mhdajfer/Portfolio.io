@@ -13,7 +13,7 @@ var refreshDuration = 10000;
         {
             var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
             svg.setAttribute('width', 2000);
-            svg.setAttribute('height',730);
+            svg.setAttribute('height',1000);
             document.querySelector('#bg').appendChild(svg);
         
             var unitSize = (window.innerWidth+window.innerHeight)/15;

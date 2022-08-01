@@ -29,7 +29,7 @@
                 MHD AJFER
             </h3>
         </div>
-        <div class="">
+        <div class="hidden lg:flex">
             <ul class="flex space-x-10 text-lg text-white pt-6 cursor-pointer">
                 <li class="text-yellow-200 hover:underline hover:underline-offset-1">
                     Home
@@ -42,15 +42,20 @@
                 </li>
             </ul>
         </div>
+        <div class="d-block lg:hidden space-y-2 h-[39px] p-2 border border-1 border-blue-200 rounded-lg">
+            <span class="block w-8 h-0.5 bg-black"></span>
+            <span class="block w-8 h-0.5 bg-black"></span>
+            <span class="block w-8 h-0.5 bg-black"></span>
+          </div>
     </div>
 
 
-    <section class="pt-48 h-[730px]" >
-        <div class="flex" style="height: 500px;">
-            <div class="w-[800px] relative" >
-                <img src="media/DPP-removebg-preview.png" style="height: 350px;;" class="absolute right-52">
+    <section class="pt-28 lg:pt-48 h-[730px]" >
+        <div class="flex lg:flex-row flex-col space-y-8 lg:justify-center lg:space-x-10">
+            <div class="flex justify-center"style="height: 350px;"  >
+                <img src="media/DPP-removebg-preview.png" class="w-[350px]">
             </div>
-            <div class="grid content-center" style="margin-top: -110px;">
+            <div class="grid content-center flex justify-center" style="margin-top:;">
                 <p class="text-2xl font-semibold" style="font-family: 'Sofia', sans-serif; font-style: oblique; color: #c9d1db;">hello, I am  
                     <h2 class="text-5xl font-black tracking-wide flex float-left" style="color: #c9d1db;">MUHAMMED 
                         <span class="text-white" >
@@ -65,12 +70,15 @@
     </section>
 
 
-    <section class="h-[730px] w-full p-10 pt-20" style="background-color: #192839;">
-        <div class="flex justify-around pt-14">
-            <div class="  h-96">
-                <div class="">
+    <section class="h-[1050px] lg:h-[730px] w-full p-10 pt-20" style="background-color: #192839;">
+        <div class="flex lg:flex-row flex-col lg:justify-around pt-14 text-center">
+            <div class="flex justify-center">
+                <img src="media/black man.jpg" class="" style="height: 25rem;"  alt="">
+            </div>
+            <div class="">
+                <div class="flex flex-col lg:flex-col justify-center">
                     <h3 class="font-semibolder text-5xl p-2" style="color: #c9d1db; font-family: 'Lato', sans-serif;">About</h3>
-                    <hr class="w-60">
+                    <hr class="w-60 mx-auto">
                 </div>
                 <div class="">
                     <p class="mt-20 tracking-widest leading-relaxed" style="color: #999;"> 
@@ -81,7 +89,7 @@
                         domain 
                     </p>
                 </div>
-                <div class="w-full flex justify-center">
+                <div class="w-full p-4 flex justify-center">
                     <a href="media/resume.pdf" download><button class=" btn-hover color-10 w-[200px] text-xl text-white font-semibold cursor-pointer h-16 rounded-full transition-all duration-700 shadow-lg shadow-[#ec7495bf]">Resume</button></a>
                 </div>
                 <div class="pt-6 space-x-6">
@@ -98,16 +106,13 @@
                     </a>
                 </div>
             </div>
-            <div class="bg-blue-700">
-                <img src="media/black man.jpg" class="" style="height: 25rem;"  alt="">
-            </div>
         </div>
     </section>
 
     <hr class="section-divider faded-edges text-transparent bg-gradient-to-r from-[#192839] via-yellow-200 to-[#192839]">
 
 
-    <section class="h-[850px] w-full p-10 pt-20" style="background-color: #192839;">
+    <section class="h-[1850px] lg:h-[850px] w-full p-10 pt-20" style="background-color: #192839;">
 
         <div class="mb-8 pl-24">
             <h3 class="font-semibolder text-5xl p-2 text-white" style="font-family: 'Lato', sans-serif;">
@@ -120,7 +125,7 @@
             </p>
         </div>
 
-        <div class="wrapper grid grid-cols-3 pl-28">
+        <div class="wrapper flex flex-col lg:flex-row items-center">
             <article class="card_wrapper m-8 h-[450px] w-[350px] relative bg-contain hover:border-2 hover:border-gray bg-no-repeat shadow-lg shadow-[#bababa] transition-all duration-500 rounded-md" style="background-color: #192839;">
                 <img src="media/facebook.png" class="w-full h-56" alt="">
                 <div class="p-6">

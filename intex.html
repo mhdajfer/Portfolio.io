@@ -23,14 +23,19 @@
     <div id="bg" class="h-[730px] w-full absolute" style="z-index: -2;">
     </div>
 
-    <div class="z-30 w-full flex justify-around fixed h-28 mx-auto pt-10 nav-scroll">
-        <div>
+    <div class="z-30 w-full flex flex-col lg:flex-row justify-around fixed items-center nav-scroll">
+        <div class="w-full lg:w-auto flex justify-around py-6">
             <h3 class="text-5xl font-black cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-200">
                 MHD AJFER
             </h3>
+            <div id="menu-button" class="lg:hidden space-y-2 h-[39px] p-2 border border-1 border-blue-200 rounded-lg">
+                <span class="block w-8 h-0.5 bg-black"></span>
+                <span class="block w-8 h-0.5 bg-black"></span>
+                <span class="block w-8 h-0.5 bg-black"></span>
+            </div>
         </div>
-        <div class="hidden lg:flex">
-            <ul class="flex space-x-10 text-lg text-white pt-6 cursor-pointer">
+        <div  id="links" class="hidden lg:inline bg-black lg:bg-transparent w-full lg:w-auto rounded-b-2xl text-center h-80 lg:h-auto pt-12 lg:pt-0 mt-[-20px] lg:mt-0 transition duration-700">
+            <ul class=" space-y-8 lg:space-y-0 lg:flex lg:flex-row lg:space-x-10 text-lg text-white pt-6 cursor-pointer">
                 <li class="text-yellow-200 hover:underline hover:underline-offset-1">
                     Home
                 </li>
@@ -42,11 +47,6 @@
                 </li>
             </ul>
         </div>
-        <div class="d-block lg:hidden space-y-2 h-[39px] p-2 border border-1 border-blue-200 rounded-lg">
-            <span class="block w-8 h-0.5 bg-black"></span>
-            <span class="block w-8 h-0.5 bg-black"></span>
-            <span class="block w-8 h-0.5 bg-black"></span>
-          </div>
     </div>
 
 
@@ -55,7 +55,7 @@
             <div class="flex justify-center"style="height: 350px;"  >
                 <img src="media/DPP-removebg-preview.png" class="w-[350px]">
             </div>
-            <div class="grid content-center flex justify-center" style="margin-top:;">
+            <div class="grid content-center flex justify-center">
                 <p class="text-2xl font-semibold" style="font-family: 'Sofia', sans-serif; font-style: oblique; color: #c9d1db;">hello, I am  
                     <h2 class="text-5xl font-black tracking-wide flex float-left" style="color: #c9d1db;">MUHAMMED 
                         <span class="text-white" >
@@ -326,13 +326,22 @@
 
         $(document).ready(function(){
 
-        $(window).on("load", function(){
-            
-            setTimeout(function(){
+
+            $('#menu-button').click(function() {
+                var x = document.getElementById('links');
+
+                x.classList.toggle('hidden')
+            })
+
+
+            $(window).on("load", function(){
+                setTimeout(function(){
                 $("#wrapp").css('opacity', 0);
                 $("#wrapp").css('z-index', -999);
             }, 3000)
-        })   
+        })
+        
+        
         $(window).scroll(function(){
   	    var scroll = $(window).scrollTop();
 	    if (scroll > 300) {

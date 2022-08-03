@@ -1,5 +1,7 @@
 
 
+
+
 $("#msg").click(function(){
     
     if ($("#bord").css('opacity') == 0) {

@@ -108,7 +108,8 @@
 
  /* --------------------------//Skill bars ----------------------------- */
 
-#submit-form input:focus ~ label
+#submit-form input:focus ~ label,
+#submit-form input:valid ~ label
 {
 
   transform: translateY(-20px);

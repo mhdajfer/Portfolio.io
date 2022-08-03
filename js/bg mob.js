@@ -12,9 +12,9 @@ var refreshDuration = 10000;
         function onLoad()
         {
             var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-            svg.setAttribute('width', 2000);
-            svg.setAttribute('height',1000);
-            document.querySelector('#bg').appendChild(svg);
+            svg.setAttribute('width', window.outerWidth);
+            svg.setAttribute('height',window.outerHeight);
+            document.querySelector('#bgmob').appendChild(svg);
         
             var unitSize = (window.innerWidth+window.innerHeight)/15;
             numPointsX = Math.ceil(window.innerWidth/unitSize)+1;
@@ -102,8 +102,8 @@ var refreshDuration = 10000;
         
         function refresh() {
             randomize();
-            for(var i = 0; i < document.querySelector('#bg svg').childNodes.length; i++) {
-                var polygon = document.querySelector('#bg svg').childNodes[i];
+            for(var i = 0; i < document.querySelector('#bgmob svg').childNodes.length; i++) {
+                var polygon = document.querySelector('#bgmob svg').childNodes[i];
                 var animate = polygon.childNodes[0];
                 if(animate.getAttribute('to')) {
                     animate.setAttribute('from',animate.getAttribute('to'));
@@ -115,7 +115,7 @@ var refreshDuration = 10000;
         }
         
         function onResize() {
-            document.querySelector('#bg svg').remove();
+            document.querySelector('#bgmob svg').remove();
             clearTimeout(refreshTimeout);
             onLoad();
         }

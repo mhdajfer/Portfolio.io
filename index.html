@@ -20,7 +20,8 @@
 </head>
 <body style="overflow-x: hidden;">
 
-    <div id="bg" class="h-[730px] w-full absolute" style="z-index: -2;">
+
+    <div id="bgmob" class=" h-[730px] w-full absolute" style="z-index: -2;">
     </div>
 
     <div class="z-30 w-full flex flex-col lg:flex-row justify-around fixed items-center nav-scroll">
@@ -28,7 +29,7 @@
             <h3 class="text-5xl font-black cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-200">
                 MHD AJFER
             </h3>
-            <div id="menu-button" class="lg:hidden space-y-2 h-[39px] p-2 border border-1 border-yellow-100 rounded-lg">
+            <div id="menu-button" class="lg:hidden space-y-2 h-[39px] p-2 mr-6 border border-1 border-yellow-100 rounded-lg">
                 <span class="block w-8 h-0.5 bg-white"></span>
                 <span class="block w-8 h-0.5 bg-white"></span>
                 <span class="block w-8 h-0.5 bg-white"></span>
@@ -50,19 +51,26 @@
     </div>
 
 
-    <section class="pt-28 lg:pt-48 h-[730px]" >
+    <section class=" pt-28 lg:pt-48 h-[730px]" style="background-color:;">
         <div class="flex lg:flex-row flex-col space-y-8 lg:justify-center lg:space-x-10">
             <div class="flex justify-center"style="height: 350px;"  >
-                <img src="media/DPP-removebg-preview.png" class="w-[350px]">
+                <img src="media/DPP-removebg-preview.png" class="w-auto md:w-[350px]">
             </div>
             <div class="grid content-center flex justify-center">
                 <p class="text-2xl font-semibold" style="font-family: 'Sofia', sans-serif; font-style: oblique; color: #c9d1db;">hello, I am  
                     <h2 class="text-5xl font-black tracking-wide flex float-left" style="color: #c9d1db;">MUHAMMED 
-                        <span class="text-white" >
+                        <span class="hidden md:block text-white" >
                             &nbspAJFER
                         </span>
-                        <div class="w-4 h-4 rounded-full bg-blue-300 ml-2 mt-[25px]">
+                        <div class="hidden md:block w-4 h-4 rounded-full bg-blue-300 ml-2 mt-[25px]">
                         </div> 
+                    </h2>
+                    <h2 class="md:hidden text-5xl font-black tracking-wide flex" style="color: #c9d1db;">
+                        <span class=" text-white" >
+                        &nbspAJFER
+                        </span>
+                        <div class="w-4 h-4 rounded-full bg-blue-300 ml-2 mt-[25px]">
+                        </div>
                     </h2>
                 </p>
             </div>
@@ -70,10 +78,10 @@
     </section>
 
 
-    <section class="h-[1050px] lg:h-[730px] w-full p-10 pt-20" style="background-color: #192839;">
+    <section class="h-[1050px] lg:h-[730px] p-10 pt-20" style="background-color: #192839;">
         <div class="flex lg:flex-row flex-col lg:justify-around pt-14 text-center">
             <div class="flex justify-center">
-                <img src="media/black man.jpg" class="" style="height: 25rem;"  alt="">
+                <img src="media/black man.jpg" class="" style="height: 22rem;"  alt="">
             </div>
             <div class="">
                 <div class="flex flex-col lg:flex-col justify-center">
@@ -320,6 +328,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/bg.js"></script>
+    <script src="js/bg mob.js"></script>
     <script src="js/skillbars.js"></script>
     <script src="js/contact.js"></script>
     <script>

@@ -38,36 +38,36 @@
         <div  id="links" class="hidden lg:inline bg-black lg:bg-transparent w-full lg:w-auto rounded-b-2xl text-center h-80 lg:h-auto pt-12 lg:pt-0 mt-[-20px] lg:mt-0 transition duration-700">
             <ul class=" space-y-8 lg:space-y-0 lg:flex lg:flex-row lg:space-x-10 text-lg text-white pt-6 cursor-pointer">
                 <li class="text-yellow-200 hover:underline hover:underline-offset-1">
-                    Home
+                   <a href="#home">Home</a> 
                 </li>
                 <li class=" hover:text-yellow-200">
-                    About
+                    <a href="#about">About</a>
                 </li>
                 <li class=" hover:text-yellow-200">
-                    Contact me
+                    <a href="#footer">Contact me</a>
                 </li>
             </ul>
         </div>
     </div>
 
 
-    <section class=" pt-28 lg:pt-48 h-[730px]" style="background-color:;">
+    <section id="home" class=" pt-28 lg:pt-48 h-[730px]">
         <div class="flex lg:flex-row flex-col space-y-8 lg:justify-center lg:space-x-10">
             <div class="flex justify-center"style="height: 350px;"  >
-                <img src="media/DPP-removebg-preview.png" class="w-auto md:w-[350px]">
+                <img src="media/DPP-removebg-preview.png" class="w-auto w-[350px]">
             </div>
-            <div class="grid content-center flex justify-center">
+            <div class=" grid content-center flex justify-center" style="margin-top: 10px;">
                 <p class="text-2xl font-semibold" style="font-family: 'Sofia', sans-serif; font-style: oblique; color: #c9d1db;">hello, I am  
                     <h2 class="text-5xl font-black tracking-wide flex float-left" style="color: #c9d1db;">MUHAMMED 
-                        <span class="hidden md:block text-white" >
+                        <span class="hidden sm:block text-white" >
                             &nbspAJFER
                         </span>
-                        <div class="hidden md:block w-4 h-4 rounded-full bg-blue-300 ml-2 mt-[25px]">
+                        <div class="hidden sm:block w-4 h-4 rounded-full bg-blue-300 ml-2 mt-[25px]">
                         </div> 
                     </h2>
-                    <h2 class="md:hidden text-5xl font-black tracking-wide flex" style="color: #c9d1db;">
+                    <h2 class="sm:hidden text-5xl font-black tracking-wide flex" style="color: #c9d1db;">
                         <span class=" text-white" >
-                        &nbspAJFER
+                        AJFER
                         </span>
                         <div class="w-4 h-4 rounded-full bg-blue-300 ml-2 mt-[25px]">
                         </div>
@@ -78,7 +78,7 @@
     </section>
 
 
-    <section class="h-[1050px] lg:h-[730px] p-10 pt-20" style="background-color: #192839;">
+    <section id="about" class="h-[1050px] lg:h-[730px] p-10 pt-20" style="background-color: #192839;">
         <div class="flex lg:flex-row flex-col lg:justify-around pt-14 text-center">
             <div class="flex justify-center">
                 <img src="media/black man.jpg" class="" style="height: 22rem;"  alt="">
@@ -122,14 +122,14 @@
 
     <section class="h-[1850px] lg:h-[850px] w-full p-10 pt-20" style="background-color: #192839;">
 
-        <div class="mb-8 pl-24">
+        <div class=" mb-8">
             <h3 class="font-semibolder text-5xl p-2 text-white" style="font-family: 'Lato', sans-serif;">
                 Projects
             </h3>
             <hr class="w-60">
 
             <p class="pt-3 text-gray-300 text-lg">
-                these were the projects that I have created <br> during my learning.
+                these were the projects that I have  <br>created during my learning.
             </p>
         </div>
 
@@ -185,7 +185,7 @@
 
     <section class="h-[730px] w-full p-10 pt-20" style="background-color: #192839;">
 
-        <div class="mb-8 pl-24 pb-10">
+        <div class="mb-8 pb-10">
             <h3 class="font-semibolder text-5xl p-2 text-white" style="font-family: 'Lato', sans-serif;">
                 Skills
             </h3>
@@ -245,16 +245,16 @@
 
     <hr class="section-divider faded-edges text-transparent bg-gradient-to-r from-[#192839] via-yellow-200 to-[#192839]">
 
-    <section class="h-[530px] w-full p-10 pt-20 relative bg-black">
+    <section id="footer" class="h-[530px] w-full  pt-20 relative bg-black">
 
         <div class="flex justify-start">
             <img src="media/typewriter.jpg" class="w-[600px] h-96 opacity-60 contrast-150" alt="">
         </div>
 
         <div class="absolute w-full"  style="top: 6%;">
-            <h3 class="text-5xl font-black text-white justify-center flex" style="font-family: 'Pitchsans Regular', sans-serif;">
+            <h3 class="text-4xl font-black text-white justify-center flex" style="font-family: 'Pitchsans Regular', sans-serif;">
                 <span class=""> Get in touch</span>
-                <div class="w-3 h-3 rounded-full bg-white mt-8 ml-1"></div>
+                <div class="w-3 h-3 rounded-full bg-white mt-6 ml-1"></div>
             </h3>
             <p class="text-center pt-28 text-slate-300">
                 If you'd like to talk about a project you want help with or<br>
@@ -276,7 +276,7 @@
             </div>
             
         </div>
-        <div class="w-full h-10 mt-6">
+        <div class="w-full h-10 mt-6 px-4">
             <h5 class="text-slate-600">BUILT FROM SCRATCH BY ME :)</h5>
         </div>
         
@@ -290,7 +290,8 @@
         </span>
     </button>
 
-    <div id="bord" class="w-[350px] h-[350px] fixed bottom-20 right-24 bg-white rounded-md transition-all duration-500 bg-gradient-to-r from-cyan-500 to-blue-300" style="opacity: 0; visibility: hidden;">
+
+    <div id="bord" class="w-80 lg:w-[350px] lg:h-[350px] fixed bottom-20 right-24 bg-white rounded-md transition-all duration-500 bg-gradient-to-r from-cyan-500 to-blue-300" style="opacity: 0; visibility: hidden;">
         <form id="submit-form" class="p-8" action="">
             <div class="mb-3 relative w-full h-14 pt-6">
                 <input type="text" id="fname" name="name" class="bg-transparent outline-0 border-b w-60 border-black">
@@ -334,6 +335,13 @@
     <script>
 
         $(document).ready(function(){
+
+
+            $('#links').click(function(){
+                var x = document.getElementById('links');
+                
+                x.classList.toggle('hidden')
+            })
 
 
             $('#menu-button').click(function() {

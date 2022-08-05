@@ -1,4 +1,9 @@
 
+body{
+  background-color: #192839;
+}
+
+
 #bgmob 
 {	
   background: linear-gradient(20deg, #192839 50%, #1ab4e2 115%);
@@ -114,3 +119,20 @@
   transform: translateY(-20px);
 }
 
+
+
+/*----------------- scroll transition -------------------- */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*----------------- //scroll transition -------------------- */
